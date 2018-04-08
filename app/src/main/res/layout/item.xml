@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/imagemusic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/music" />
+    <TextView
+        android:id="@+id/musicname"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:textSize="20sp"
+        android:text="null"
+        android:textColor="#1e1f28"
+        app:layout_constraintLeft_toRightOf="@id/imagemusic"
+
+        />
+    <TextView
+        android:id="@+id/musicartist"
+        android:layout_width="250dp"
+        android:layout_height="25sp"
+        android:textSize="15dp"
+        android:text="null"
+        android:textColor="#494a4b"
+        app:layout_constraintTop_toBottomOf="@id/musicname"
+        app:layout_constraintLeft_toRightOf="@id/imagemusic"
+
+        />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintRight_toRightOf="@id/musicname"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:paddingTop="5dp"
+        app:layout_constraintLeft_toRightOf="@id/play"
+        android:src="@drawable/stop" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
